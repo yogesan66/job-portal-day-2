@@ -1,0 +1,104 @@
+<div>
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+      <div class="container-fluid custom-container">
+        <a class="navbar-brand text-dark fw-bold me-auto" href="index.html">
+          <img
+            src="https://main.dll6omdmjfwlk.amplifyapp.com/assets/images/logo-dark.png"
+            height="22"
+            alt=""
+            class="logo-dark"
+          />
+          <img
+            src="https://main.dll6omdmjfwlk.amplifyapp.com/assets/images/logo-light.png"
+            height="22"
+            alt=""
+            class="logo-light"
+          />
+        </a>
+        <div>
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-label="Toggle navigation"
+          >
+            <i class="mdi mdi-menu"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mx-auto navbar-center">
+            <li class="nav-item dropdown dropdown-hover">
+              <a
+                class="nav-link"
+                routerLink="/home"
+                id="homedrop"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Home
+                
+              </a>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a
+                class="nav-link"
+                id="jobsdropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                About
+              </a>
+            </li>
+            <li class="nav-item dropdown dropdown-hover">
+              <a
+                class="nav-link"
+                id="pagesdoropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Blog
+                
+              </a>
+            </li>
+            <!--end dropdown-->
+            <li class="nav-item dropdown dropdown-hover">
+              <a
+                class="nav-link"
+                id="productdropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                routerLink="/contact-us"
+              >
+                Contact
+              </a>
+            </li>
+            <!--end dropdown-->
+            <li class="nav-item" id="productdropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false">
+              <!-- <a class="nav-link">Post a Job</a> -->
+            </li>
+          </ul>
+          <!--end navbar-nav-->
+        </div>
+        <!--end navabar-collapse-->
+        <!--end header-menu-->
+      </div>
+      <!--end container-->
+          <a href="#" style="width:4rem">
+          <i class="fas fa-bell fa-lg" style="color:black;font-size:1.3rem;"></i>
+          <span class="badge badge-danger">{{notification.length}}</span>
+        </a>
+        
+
+     
+        <button class="pro-avatar">
+            <span >{{userEmailId.substring(0,1) | titlecase}}</span>
+        </button>
+      
+    </nav>
+ 

@@ -1,0 +1,380 @@
+<nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+    <div class="container-fluid custom-container">
+      <a class="navbar-brand text-dark fw-bold me-auto" href="index.html">
+        <img
+          src="https://main.dll6omdmjfwlk.amplifyapp.com/assets/images/logo-dark.png"
+          height="22"
+          alt=""
+          class="logo-dark"
+        />
+        <img
+          src="https://main.dll6omdmjfwlk.amplifyapp.com/assets/images/logo-light.png"
+          height="22"
+          alt=""
+          class="logo-light"
+        />
+      </a>
+      <div>
+        <button
+          class="navbar-toggler me-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-label="Toggle navigation"
+        >
+          <i class="mdi mdi-menu"></i>
+        </button>
+      </div>
+<div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mx-auto navbar-center">
+      <li class="nav-item dropdown dropdown-hover">
+        <a
+          class="nav-link"
+          routerLink="/home"
+          id="homedrop"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Home
+          
+        </a>
+      </li>
+      <li class="nav-item dropdown dropdown-hover">
+        <a
+          class="nav-link"
+          
+          id="jobsdropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          About     
+        </a>
+      </li>
+      <li class="nav-item dropdown dropdown-hover">
+        <a
+          class="nav-link"
+          
+          id="pagesdoropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+        >
+          Blog
+          
+        </a>
+      </li>
+      <!--end dropdown-->
+      <li class="nav-item dropdown dropdown-hover">
+        <a
+          class="nav-link"
+          id="productdropdown"
+          role="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Contact
+        </a>
+      </li>
+      <!--end dropdown-->
+      <li class="nav-item" id="productdropdown"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false">
+        <a class="nav-link">Post a Job</a>
+      </li>
+    </ul>
+    <!--end navbar-nav-->
+  </div>
+  </div>
+  </nav>
+  <section class="section bg-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section-title text-center mb-4 pb-2">
+            <h4 class="title">View Profile</h4>
+            <p class="text-muted mb-1">
+              View your profile here that you have applied all the best for your future
+            </p>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+      <!--end row-->
+      <!--end row-->
+    </div>
+    <div class="profileTitle"><b>Candidate Profile:</b></div><br>
+    <div class="card text-center ">
+        <div class="card-body" *ngFor="let viewAppliedData of viewAppliedForm">
+            <div class="form-group row">
+                <label class="col-sm-6 col-form-label">Employee Name :</label>
+                <div class="col-sm-4">
+                  {{viewAppliedData.name}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-6 col-form-label">Job Title :</label>
+                <div class="col-sm-4">
+                    {{viewAppliedData.jobTitle}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-6 col-form-label">Experience :</label>
+                <div class="col-sm-4">
+                    {{viewAppliedData.experience}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-6 col-form-label">Job Type :</label>
+                <div class="col-sm-4">
+                    {{viewAppliedData.jobType}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-6 col-form-label">Skills :</label>
+                <div class="col-sm-4">
+                    {{viewAppliedData.keySkills}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-6 col-form-label">Email :</label>
+                <div class="col-sm-4">
+                    {{viewAppliedData.emailAddress}}
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword" class="col-sm-6 col-form-label">contact :</label>
+                <div class="col-sm-4">
+                    {{viewAppliedData.contact}}
+                </div>
+            </div>
+        </div>
+      </div>
+    <!--end container-->
+  </section>
+  <section class="bg-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="footer-item mt-4 mt-lg-0 me-lg-5">
+            <h4 class="text-white mb-4">Job Portal</h4>
+            <p class="text-white-50">
+              It is a long established fact that a reader will be of a page
+              reader will be of at its layout.
+            </p>
+            <p class="text-white mt-3">Follow Us on:</p>
+            <ul class="footer-social-menu list-inline mb-0">
+              <li class="list-inline-item">
+                <a href="index.html#"><i class="uil uil-facebook-f"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="index.html#"><i class="uil uil-linkedin-alt"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="index.html#"><i class="uil uil-google"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="index.html#"><i class="uil uil-twitter"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end col-->
+        <div class="col-lg-2 col-6">
+          <div class="footer-item mt-4 mt-lg-0">
+            <p class="fs-16 text-white mb-4">Company</p>
+            <ul class="list-unstyled footer-list mb-0">
+              <li>
+                <a href="about.html"
+                  ><i class="mdi mdi-chevron-right"></i> About Us</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="mdi mdi-chevron-right"></i> Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="services.html"
+                  ><i class="mdi mdi-chevron-right"></i> Services</a
+                >
+              </li>
+              <li>
+                <a href="blog.html"
+                  ><i class="mdi mdi-chevron-right"></i> Blog</a
+                >
+              </li>
+              <li>
+                <a href="team.html"
+                  ><i class="mdi mdi-chevron-right"></i> Team</a
+                >
+              </li>
+              <li>
+                <a href="pricing.html"
+                  ><i class="mdi mdi-chevron-right"></i> Pricing</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end col-->
+        <div class="col-lg-2 col-6">
+          <div class="footer-item mt-4 mt-lg-0">
+            <p class="fs-16 text-white mb-4">For Jobs</p>
+            <ul class="list-unstyled footer-list mb-0">
+              <li>
+                <a href="job-categories.html"
+                  ><i class="mdi mdi-chevron-right"></i> Browser Categories</a
+                >
+              </li>
+              <li>
+                <a href="job-list.html"
+                  ><i class="mdi mdi-chevron-right"></i> Browser Jobs</a
+                >
+              </li>
+              <li>
+                <a href="job-details.html"
+                  ><i class="mdi mdi-chevron-right"></i> Job Details</a
+                >
+              </li>
+              <li>
+                <a href="bookmark-jobs.html"
+                  ><i class="mdi mdi-chevron-right"></i> Bookmark Jobs</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end col-->
+        <div class="col-lg-2 col-6">
+          <div class="footer-item mt-4 mt-lg-0">
+            <p class="text-white fs-16 mb-4">For Candidates</p>
+            <ul class="list-unstyled footer-list mb-0">
+              <li>
+                <a href="candidate-list.html"
+                  ><i class="mdi mdi-chevron-right"></i> Candidate List</a
+                >
+              </li>
+              <li>
+                <a href="candidate-grid.html"
+                  ><i class="mdi mdi-chevron-right"></i> Candidate Grid</a
+                >
+              </li>
+              <li>
+                <a href="candidate-details.html"
+                  ><i class="mdi mdi-chevron-right"></i> Candidate Details</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end col-->
+        <div class="col-lg-2 col-6">
+          <div class="footer-item mt-4 mt-lg-0">
+            <p class="fs-16 text-white mb-4">Support</p>
+            <ul class="list-unstyled footer-list mb-0">
+              <li>
+                <a href="contact.html"
+                  ><i class="mdi mdi-chevron-right"></i> Help Center</a
+                >
+              </li>
+              <li>
+                <a href="faqs.html"
+                  ><i class="mdi mdi-chevron-right"></i> FAQ'S</a
+                >
+              </li>
+              <li>
+                <a href="privacy-policy.html"
+                  ><i class="mdi mdi-chevron-right"></i> Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </section>
+  <!-- END FOOTER -->
+  <!-- START FOOTER-ALT -->
+  <div class="footer-alt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-white-50 text-center mb-0">
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            2022 © Job Portal - Job Listing Page Template by
+            <a
+              href="https://themeforest.net/search/themesdesign"
+              target="_blank"
+              class="text-reset text-decoration-underline"
+              >Themesdesign</a
+            >
+          </p>
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
+    </div>
+    <!--end container-->
+  </div>
+  <!-- END FOOTER -->
+  <!-- Style switcher -->
+  <div id="style-switcher" onclick="toggleSwitcher()" style="left: -165px;">
+    <div>
+      <h6>Select your color</h6>
+      <ul class="pattern list-unstyled mb-0">
+        <li>
+          <a
+            class="color-list color1"
+            
+            onclick="setColorGreen()"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="color-list color2"
+            
+            onclick="setColor('blue')"
+          ></a>
+        </li>
+        <li>
+          <a
+            class="color-list color3"
+            
+            onclick="setColor('green')"
+          ></a>
+        </li>
+      </ul>
+      <div class="mt-3">
+        <h6>Light/dark Layout</h6>
+        <div class="text-center mt-3">
+          <!-- light-dark mode -->
+          <a
+            
+            id="mode"
+            class="mode-btn text-white rounded-3"
+          >
+            <i class="uil uil-brightness mode-dark mx-auto"></i>
+            <i class="uil uil-moon mode-light"></i>
+          </a>
+          <!-- END light-dark Mode -->
+        </div>
+      </div>
+    </div>
+    <div class="bottom d-none d-md-block">
+      <a  class="settings rounded-end"
+        ><i class="mdi mdi-cog mdi-spin"></i
+      ></a>
+    </div>
+  </div>
+  <!-- end switcher-->
+  <!--start back-to-top-->
+  <button onclick="topFunction()" id="back-to-top" style="display: none;">
+    <i class="mdi mdi-arrow-up"></i>
+  </button>
